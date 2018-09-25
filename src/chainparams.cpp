@@ -172,14 +172,14 @@ public:
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 2402015;
 
-            printf("genesis.nTime = %u \n", genesis.nTime);
-            printf("genesis.nNonce = %u \n", genesis.nNonce);
-            printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str()); //first this, then comment this line out and uncomment the one under.
-            printf("genesis.hashMerkleRoot = %s \n", genesis.hashMerkleRoot.ToString().c_str()); //improvised. worked for me, to find merkle root
+        //    printf("genesis.nTime = %u \n", genesis.nTime);
+        //    printf("genesis.nNonce = %u \n", genesis.nNonce);
+        //    printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str()); //first this, then comment this line out and uncomment the one under.
+        //    printf("genesis.hashMerkleRoot = %s \n", genesis.hashMerkleRoot.ToString().c_str()); //improvised. worked for me, to find merkle root
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x"));
-        assert(genesis.hashMerkleRoot == uint256("0x"));
+        assert(hashGenesisBlock == uint256("0x5cbdcb527a88065db71ad6ecdf3221c67da4a0bb2a883f764f30355339f5ac11"));
+        assert(genesis.hashMerkleRoot == uint256("0x4b29d4e77199037201f8bf865e62b6f29e956571b1637a0a4fa1572411c68eef"));
 
         vSeeds.push_back(CDNSSeedData("46.232.248.21", "46.232.248.21"));
         vSeeds.push_back(CDNSSeedData("37.221.192.88", "37.221.192.88"));
