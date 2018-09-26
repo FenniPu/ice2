@@ -277,13 +277,13 @@ public:
         genesis.nTime = 1454124731;
         genesis.nNonce = 2402015;
 
-            printf("genesis.nTime = %u \n", genesis.nTime);
-            printf("genesis.nNonce = %u \n", genesis.nNonce);
-            printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str()); //first this, then comment this line out and uncomment the one under.
-            printf("genesis.hashMerkleRoot = %s \n", genesis.hashMerkleRoot.ToString().c_str()); //improvised. worked for me, to find merkle root
+        //    printf("genesis.nTime = %u \n", genesis.nTime);
+        //    printf("genesis.nNonce = %u \n", genesis.nNonce);
+        //    printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str()); //first this, then comment this line out and uncomment the one under.
+        //    printf("genesis.hashMerkleRoot = %s \n", genesis.hashMerkleRoot.ToString().c_str()); //improvised. worked for me, to find merkle root
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x"));
+        assert(hashGenesisBlock == uint256("0x7214dea0bb514c5b31cd9cd3a3dddd43c811311d85c4601e01562364731307ef"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
